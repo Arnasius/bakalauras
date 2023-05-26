@@ -1,0 +1,311 @@
+@include form-control-placeholder($default-color, 1);
+
+.form-group {
+  position: relative;
+  margin-bottom: $spacing-sm;
+
+  &:last-child:not(.align-bottom) {
+    margin-bottom: 0;
+  }
+
+  .btn-neutral {
+    z-index: inherit !important;
+  }
+
+  input:focus,
+  input:focus ~ .input-group-append {
+    box-shadow: 0 0 0 0.2rem $default-box-shadow;
+  }
+
+  select[disabled] {
+    pointer-events: none;
+  }
+
+  .form-control {
+    border-color: $medium-gray;
+    font-size: $font-size-base;
+    color: $black-color;
+
+    &.focus,
+    &.focus ~ .input-group-append .btn {
+      border-color: $primary-color;
+    }
+
+    &:disabled,
+    &[disabled],
+    &.disabled {
+      @include opacity(0.5);
+      pointer-events: none;
+    }
+  }
+
+  &.d-flex .custom-control {
+    padding:0;
+    .custom-control-label {
+      padding: 12px;
+      &::before, &::after {
+        top: $spacing-xs/2;
+        left: $spacing-xs/2;
+      }
+    }
+  }
+  
+  .custom-switch {
+    padding-left: 55px;
+    min-height: unset;
+    z-index: inherit;
+
+    .custom-control-label {
+      vertical-align: middle;
+      height: 20px;
+      width: max-content;
+
+      &::before {
+        top: 0;
+        left: -55px;
+        width: 50px;
+        height: 20px;
+        border-radius: 12px;
+        border-color: $medium-gray;
+      }
+
+      &::after {
+        top: 2px;
+        left: calc(-55px + 2px);
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        background-color: $dark-gray;
+        opacity: 0.8;
+      }
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::before {
+      border-color: $primary-color;
+      background-color: $primary-color;
+    }
+
+    .custom-control-input:checked ~ .custom-control-label::after {
+      background-color: $white-color;
+      -webkit-transform: translateX(1.9rem);
+      transform: translateX(1.9rem);
+    }
+
+    .custom-control-input:disabled:checked ~ .custom-control-label::before {
+      border-color: $gray-color;
+      background-color: $gray-color;
+    }
+  }
+}
+
+.width-content {
+  width: fit-content !important;
+
+  .mcs-label {
+    width: 90px;
+  }
+}
+
+.label-left {
+  margin-bottom: 0 !important;
+  display: inline-block;
+
+  label {
+    margin: auto;
+  }
+
+  select {
+    display: inline-block;
+    width: auto;
+    margin-left: $spacing-xs;
+  }
+
+  & + .btn {
+    margin-left: $spacing-xs;
+  }
+}
+
+.slider {
+  margin-left: $spacing-sm;
+  -webkit-appearance: none;
+  appearance: none;
+  width: auto;
+  height: 5px;
+  background: $medium-gray;
+  outline: none;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  margin-top: 12px;
+  border-radius: 0.25rem !important;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: $primary-color;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: $primary-color;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+}
+
+.input-group {
+  .form-control {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-right: none;
+
+    &:focus {
+      border-right: none;
+      box-shadow: 0 0 0 0.2rem $default-box-shadow;
+    }
+
+    &.has-error:focus {
+      border-right: none;
+      box-shadow: 0 0 0 0.2rem $danger-color-light-opaque !important;
+
+      ~ .input-group-append {
+        box-shadow: 0 0 0 0.2rem $danger-color-light-opaque;
+
+        .btn {
+          border-color: $danger-color;
+        }
+      }
+    }
+  }
+
+  > div:not(.input-group-append) + div:not(.input-group-append) {
+    margin-left: $spacing-xs;
+
+    @media screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+
+  .input-group-append {
+    border-radius: 0.25rem !important;
+
+    .btn {
+      border: 1px solid $medium-gray;
+      padding: 0px $spacing-xs;
+      border-left: none;
+      color: inherit;
+      z-index: 3 !important;
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+
+      &:active {
+        border-color: $medium-gray;
+      }
+    }
+
+    &:not(:last-child) {
+      border-radius: 0 !important;
+
+      .btn {
+        border-radius: 0;
+        border-right: none;
+        border-left: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $width-sm) {
+    div + .align-bottom {
+      display: block;
+      width: 100% !important;
+      margin: $spacing-xs 0 0 0 !important;
+    }
+  }
+}
+
+.edit-user {
+  .form-group:last-child:not(.align-bottom) {
+    margin-bottom: 16px;
+  }
+
+  .input-group {
+    margin-bottom: 0px;
+    margin-top: 0px;
+  }
+}
+
+// Errors
+
+.has-error:focus {
+  box-shadow: 0 0 0 0.2rem $danger-color-light-opaque !important;
+
+  ~ .input-group-append {
+    box-shadow: 0 0 0 0.2rem $danger-color-light-opaque !important;
+  }
+}
+
+.form-control.has-error {
+  border: 1px solid $danger-color;
+
+  & ~ .input-group-append .btn {
+    border-color: $danger-color;
+  }
+}
+
+.has-error.error-message {
+  font-size: $font-size-sm;
+  line-height: $font-size-sm * 1.4;
+  position: absolute;
+  bottom: $line-height-base + $spacing-xs;
+  padding: 0px 2px;
+  background: white;
+  left: -1px;
+  width: fit-content !important;
+  white-space: nowrap;
+  box-sizing: content-box;
+}
+
+.hide-label .has-error.error-message {
+  top: -$font-size-sm * 0.5;
+}
+
+tr:hover > .hide-label .has-error.error-message,
+tr.active > .hide-label .has-error.error-message,
+tr.active + tr .hide-label .has-error.error-message {
+  background: linear-gradient(to bottom,  #f5f5f6 0%,#ffffff 100%);
+}
+
+
+.multi-select {
+  .dropdown {
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 2;
+
+    label {
+      color: $black-color;
+      width: 100%;
+    }
+
+    & div > div:hover {
+      background-color: $medium-gray;
+    }
+  }
+
+  select {
+    top: 0px;
+    border: none;
+    background: transparent;
+    right: 0;
+    height: 35px;
+    left: 0;
+    width: 100%;
+    max-width: none !important;
+    pointer-events: none;
+  }
+}

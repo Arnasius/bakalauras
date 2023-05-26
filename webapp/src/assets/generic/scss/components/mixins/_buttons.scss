@@ -1,0 +1,65 @@
+// Mixin for generating new styles
+@mixin btn-styles($btn-color, $btn-states-color) {
+  background-color: $btn-states-color;
+  color: $btn-color;
+
+  &:hover,
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  &:not(:disabled):not(.disabled):focus-visible,
+  &:not(:disabled):not(.disabled):active:focus,
+  &:active:hover,
+  &.active:hover {
+    background-color: $btn-states-color;
+    color: $btn-color;
+    box-shadow: none;
+    outline: none;
+    opacity: 0.6;
+  }
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:active,
+    &.active {
+      background-color: $btn-color;
+      border-color: $btn-color;
+    }
+  }
+
+  // btn-neutral style
+  @if $btn-color == $white-color {
+    color: $primary-color;
+
+    &.active,
+    &:active,
+    &:active:hover,
+    &.active:hover {
+      background-color: $white-color;
+      color: $primary-states-color;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: $primary-states-color;
+    }
+  } @else {
+    color: $btn-color;
+  }
+
+  &.btn-remove,
+  &.btn-reload {
+    color: $btn-color;
+
+    &:hover,
+    &:active {
+      background-color: $transparent-bg;
+      color: $btn-states-color;
+      text-decoration: none;
+      box-shadow: none;
+    }
+  }
+}

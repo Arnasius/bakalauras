@@ -1,0 +1,78 @@
+.organization-switch {
+    position: relative;
+
+    .organization-name {
+        position: relative;
+        z-index: 2;
+        font-size: $font-size-h3;
+        padding: $spacing-xs $spacing-sm;
+        cursor: pointer;
+
+        i {
+            margin-left: $spacing-sm;
+            color: $font-sidebar-nav;
+        }
+    }
+
+    .organization-switch-dialog {
+        background: $white-color;
+        color: $font-sidebar-nav;
+        padding: $spacing-lg $spacing-sm $spacing-sm;
+        width: 420px;
+        border-radius: $border-radius-large;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: -$spacing-xs;
+
+        .organization-list {
+            min-height: 200px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .organization-item {
+            padding: $spacing-xs * 1.5 0;
+            border-bottom: 1px solid $background-grey;
+            cursor: pointer;
+
+            &.active {
+                color: $font-sidebar-nav-active;
+            }
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+
+        .organization-actions {
+            position: absolute;
+            cursor: pointer;
+            top: $spacing-sm;
+            right: $spacing-sm;
+            font-size: $font-size-h2;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
+    &.open {
+        .organization-name {
+            color: $black-color;
+        }
+    }
+
+    .organization-switch-backdrop {
+        background: $black-color;
+        opacity: 0.5;
+        z-index: 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+}
+

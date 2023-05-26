@@ -1,0 +1,269 @@
+.table {
+  > tbody {
+    word-break: break-word;
+  }
+  
+  > thead > tr > th {
+    color: $dark-gray;
+    font-weight: $font-weight-normal;
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    padding: $spacing-xs*1.5 $spacing-xs/2;
+  }
+
+  > tbody > tr {
+    border-top: 1px solid $medium-gray;
+
+    &.disabled {
+      background-color: $medium-gray !important;
+      color: $gray-color;
+    }
+
+    & > td {
+      vertical-align: middle;
+    }
+
+    .min-height {
+      min-height: 21px;
+    }
+
+    &.arrow td:first-child {
+      .form-group {
+        float: right;
+        width: calc(100% - 22px);
+      }
+      span.arrow-style:before {
+        padding: $spacing-xs 0;
+        float: left;
+        width: $spacing-xs;
+      }
+    }
+
+    &.active {
+      background-color: $table-gray;
+
+      + tr {
+        background-color: $table-gray;
+      }
+    }
+
+    td:first-child span.active:before {
+      font: normal normal normal 14px/1 "Nucleo Outline";
+      margin-right: $spacing-xs;
+      font-size: $font-size-base;
+      cursor: pointer;
+      vertical-align: middle;
+      content: "\ea39";
+    }
+
+    td:first-child span.closed:before {
+      font: normal normal normal 14px/1 "Nucleo Outline";
+      margin-right: $spacing-xs;
+      font-size: $font-size-base;
+      cursor: pointer;
+      vertical-align: middle;
+      content: "\ea3b";
+    }
+  }
+
+   > tbody > tr:last-child {
+    border-bottom: 1px solid $medium-gray;
+  }
+
+  .sort {
+    cursor: pointer;
+
+    &:hover {
+      color: $black-color;
+    }
+
+    div {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      word-break: break-word;
+
+      div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        margin: 0 $spacing-sm 0 $spacing-xs;
+
+        * {
+          font-size: 8px;
+          opacity: 0.8;
+        }
+      }
+
+      .active {
+        color: $black-color;
+        font-weight: bold;
+        opacity: 1 !important;
+      }
+    }
+  }
+
+  .table,
+  .table > thead > tr {
+    background-color: $table-gray;
+  }
+
+  .action-col {
+    width: 40px;
+  }
+
+  a:not([href]):not([tabindex]):not(.network-iface) {
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  button,
+  .button {
+    line-height: normal;
+    font-size: 12px;
+  }
+}
+
+.table-hover tbody {
+  tr:hover {
+    background: #fbfbfb;
+  }
+
+  .table tr:hover {
+    background: #fbfbfb;
+  }
+}
+
+.table-clickable tbody {
+  tr:hover:not(.emty-row) {
+    cursor: pointer;
+  }
+
+  .table tr {
+    cursor: auto;
+  }
+}
+
+.ssid-settings {
+  .active + tr > td {
+    vertical-align: top;
+  }
+
+  // prevent radio switch label break
+  .custom-control-label {
+    min-width: 92px;
+  }
+}
+
+.pagination {
+  margin-top: $spacing-sm;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .btn {
+    padding: $spacing-xs/2 $spacing-xs;
+    background-color: transparent;
+  }
+
+  .btn-disabled {
+    background: none;
+    color: $dark-gray;
+    pointer-events: none;
+  }
+
+  i + i {
+    position: relative;
+    left: -$spacing-xs;
+  }
+
+  @media screen and (max-width: $width-md) {
+    .text-right {
+      text-align: left !important;
+      margin-top: $spacing-sm;
+    }
+  }
+  .btn-primary,
+  .btn-primary:focus {
+    color: #8c8c94;
+  }
+}
+
+@media screen and (min-width: $width-md) {
+  .table-layout-fixed {
+    table-layout: fixed;
+    word-wrap: break-word;
+    width: 100%;
+    .reduce-child {
+      width: 40px;
+    }
+  }
+}
+
+.table-actions {
+  align-items: baseline;
+
+  > .col,
+  > [class*="col-"] {
+    margin-bottom: $spacing-sm;
+  }
+}
+
+.total-entries {
+  color: $dark-gray;
+}
+
+@media screen and (min-width: $width-lg) {
+  .table-fixed,
+  .table-fixed .table {
+    table-layout: fixed;
+    word-wrap: break-word;
+  }
+}
+
+// spacing fix for welink port assigment tablet block
+td .col > .row:not(:last-child) {
+  margin-bottom: $spacing-xs;
+}
+
+.table-actions {
+  a, .btn {
+    color: $font-table-actions !important;
+    font-size: 15px !important;
+  }
+
+  .btn-reload.btn{
+    font-size: 17px !important;
+    color: #a1a1a1 !important;
+  }
+}
+
+@media screen and (max-width: $width-md) {
+  .organization-select {
+    display: flex;
+    > div {
+      width: 100%;
+    }
+    > span {
+      display: flex;
+      align-items: center;
+    }
+    .form-group {
+      width: 100% !important;
+    }
+  }
+}
+
+.min-col-width-140 {
+  min-width: 140px;
+}
+
+.min-col-width-90 {
+  min-width: 90px;
+}
+

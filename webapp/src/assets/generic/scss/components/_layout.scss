@@ -1,0 +1,352 @@
+#root {
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: $background-grey;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: $sidebar-width;
+  z-index: 1030;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .sidebar-wrapper {
+    position: relative;
+    z-index: 4;
+    margin-bottom: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: $spacing-md $spacing-sm;
+  }
+
+  .sidebar-width-toggler {
+    position: absolute;
+    top: $spacing-md + 3px;
+    left: $sidebar-width - $spacing-sm - 32px;
+    height: 50px;
+    width: 42px;
+    z-index: 2000;
+    color: $light-gray;
+    transition: $transition;
+
+    &:hover {
+      @include transform-translate-x(-3px);
+      cursor: pointer;
+      color: $primary-color;
+    }
+
+    i {
+      font-size: $font-size-h3;
+    }
+
+    i + i {
+      position: relative;
+      left: -7px;
+    }
+  }
+
+  .sidebar-width-toggler.collapsed {
+    left: 22px;
+
+    &:hover {
+      @include transform-translate-x(3px);
+    }
+  }
+
+  .triangle-block {
+    position: absolute;
+    cursor: pointer;
+    top: 16px;
+    right: 46px;
+
+    .triangle-up {
+      position: relative;
+      bottom: 3px;
+      transform: rotate(180deg);
+    }
+  }
+
+  .nav {
+    .dropdown-off > .nav {
+      max-height: 0px;
+      transition: max-height 0.3s ease-out;
+    }
+    .dropdown-on > .nav {
+      max-height: 1000px;
+      transition: max-height 1s ease-in;
+    }
+
+    li {
+      position: relative;
+
+      ul.nav {
+        overflow: hidden;
+
+        li a {
+          padding-left: $spacing-md;
+        }
+      }
+
+      > a {
+        padding: $spacing-xs;
+        margin: $spacing-xs 0;
+        color: $font-sidebar-nav;
+        cursor: pointer;
+      }
+
+      &:hover:not(.active) > a,
+      &:focus:not(.active) > a {
+        background-color: $opacity-1;
+      }
+
+      &.active > a:not([data-toggle="collapse"]){
+        background-color: $background-sidebar-link-active;
+        color: $font-sidebar-nav-active;
+        border-radius: 25px;
+      }
+    }
+
+    p {
+      margin: 0;
+      width: 200px;
+      opacity: 1;
+    }
+
+    i {
+      font-size: $font-size-base;
+      float: left;
+      line-height: $line-height-base;
+      width: 34px;
+      text-align: center;
+      color: $font-sidebar-nav;
+      margin-right: $spacing-xs;
+    }
+
+    .active i,
+    .active p,
+    .active + .triangle-block i {
+      color: $font-sidebar-nav-active;
+    }
+  }
+
+  .logo {
+    position: relative;
+    height: $header-height;
+    padding: $spacing-md $spacing-md;
+    z-index: 4;
+    background: $logo-background;
+
+    .logo-img {
+      background: url(#{$logo}) no-repeat left top;
+      background-size: contain;
+      width: $logo-width;
+      height: $logo-height;
+      visibility: visible;
+      opacity: 1;
+      transition: $transition-opacity;
+    }
+  }
+
+  .nav-fv-versions {
+    z-index: 4;
+
+    li {
+      display: flex;
+      color: $dark-gray;
+    }
+  }
+
+  &:before,
+  &:after {
+    display: block;
+    content: "";
+    opacity: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &:after {
+    background: $sidebar-bg;
+    z-index: 3;
+  }
+}
+
+.sidebar.collapsed {
+  width: $sidebar-collapsed-width;
+
+  .logo-img {
+    visibility: hidden;
+    opacity: 0;
+    transition: $transition-opacity;
+  }
+
+  .nav {
+    > a {
+      height: inherit;
+    }
+
+    .nav-link p {
+      width: 0;
+      opacity: 0;
+    }
+
+    .triangle-block {
+      right: -11px;
+    }
+  }
+
+  .nav-fv-versions p {
+    width: 0;
+    opacity: 0;
+  }
+}
+
+.main-panel {
+  position: relative;
+  float: right;
+  width: calc(100% - #{$sidebar-width});
+  background-color: $light-gray;
+  padding-top: $header-height;
+  z-index: 1030;
+
+  .content {
+    padding: $spacing-md;
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+.main-panel.collapsed {
+  width: calc(100% - #{$sidebar-collapsed-width});
+}
+
+.login-form .logo-img {
+  background: url(#{$logo-login}) no-repeat left top;
+  background-position: top left;
+  background-size: contain;
+  box-sizing: content-box;
+  height: 50px;
+}
+
+@media screen and (min-width: 991px) {
+  .sidebar,
+  .main-panel,
+  .sidebar-wrapper {
+    -webkit-transition-property: top, bottom, width;
+    transition-property: top, bottom, width;
+    -webkit-transition-duration: 0.2s, 0.2s, 0.35s;
+    transition-duration: 0.2s, 0.2s, 0.35s;
+    -webkit-transition-timing-function: linear, linear, ease;
+    transition-timing-function: linear, linear, ease;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.footer {
+  color: $dark-gray;
+  padding: $spacing-sm 0;
+  z-index: 4;
+}
+
+@media screen and (max-width: $width-md) {
+  .main-panel {
+    width: 100%;
+    padding-top: 135px;
+    .content {
+      padding: 0 $spacing-sm !important;
+    }
+  }
+
+  .sidebar,
+  .bootstrap-navbar {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 220px;
+    right: auto;
+    left: 0;
+    z-index: 1032;
+    visibility: visible;
+    overflow-y: visible;
+    padding: 0;
+    box-shadow: $box-shadow;
+    @include transition(0.5s, cubic-bezier(0.685, 0.0473, 0.346, 1));
+    @include transform-translate-x(-$sidebar-mobile-width);
+  }
+
+  .footer {
+    margin-left: $spacing-xs;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: $spacing-md;
+  right: $spacing-md;
+  display: inline-flex;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  z-index: 30000;
+  color: $dark-gray;
+  &:hover{
+    background-color: $medium-gray !important;
+  }
+  @media screen and (max-width: $width-sm) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3240;
+  .about {
+    max-width: fit-content;
+  }
+  button .closed .icon-filter {
+    color: $gray-color !important;
+  }
+  .graph-lg,
+  .graph-md {
+    height: 80vh !important;
+  }
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.bottom-0 {
+  bottom: 0;
+}

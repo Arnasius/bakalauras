@@ -1,0 +1,16 @@
+{
+  "name": "jscrypt",
+  "version": "1.0.0",
+  "description": "JavaScript crypt() password hash generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "des",
+    "md5",
+    "crypt"
+  ],
+  "author": "Emil Mikulic",
+  "license": "BSD"
+}

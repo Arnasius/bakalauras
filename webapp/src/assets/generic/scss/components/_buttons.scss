@@ -1,0 +1,270 @@
+.btn {
+  vertical-align: baseline;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  border: none;
+  border-radius: $border-radius-large;
+  padding: $spacing-xs $spacing-sm;
+  width: fit-content;
+
+  @include btn-styles($default-color, $default-states-color);
+
+  &:hover {
+    @include opacity(1);
+    outline: 0 !important;
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:disabled,
+  &[disabled],
+  &.disabled {
+    @include opacity(0.3);
+    pointer-events: none;
+  }
+
+  & + .btn {
+    margin-left: $spacing-xs;
+  }
+
+  &.with-icon {
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-right: $spacing-xs;
+    }
+  }
+}
+
+.fixed-size {
+  width: 100px;
+  .spinner-border {
+    height: 14px;
+    width: 14px;
+  }
+}
+
+.btn-group {
+  .btnField button {
+    width: 69px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .dropdown-toggle {
+    margin-left: 0 !important;
+    background-color: $primary-states-color;
+
+    i {
+      position: relative;
+      top: 1px;
+      left: 2px;
+      font-size: 12px;
+    }
+
+    &:focus {
+      background-color: $primary-states-color;
+    }
+
+    // hide reactstrap caret
+    &::after {
+      border: none;
+    }
+  }
+
+  .dropdown-menu {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-base;
+    background-color: $primary-states-color;
+
+    @media screen and (min-width: $changes-block-to-bottom) {
+      transform: translate3d(8px, 36px, 0px) !important;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+
+    @media screen and (max-width: $changes-block-to-bottom) {
+      transform: translate3d(8px, -38px, 0px) !important;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .dropdown-item {
+    padding: $spacing-xs $spacing-sm;
+    color: $white-color;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $primary-color;
+    }
+  }
+}
+
+.btn-primary {
+  @include btn-styles($primary-color, $primary-states-color);
+}
+
+.btn-danger {
+  @include btn-styles($danger-color, $danger-states-color);
+}
+
+.btn-neutral {
+  @include btn-styles($white-color, $white-color);
+}
+
+.btn-transparent {
+  @include btn-styles($white-color, $white-color);
+  background-color: $transparent-bg;
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    background-color: $transparent-bg !important;
+  }
+}
+
+.btn-negative {
+  @include btn-styles($brand-negative, $dark-gray);
+}
+
+.btn-remove {
+  @include btn-styles($gray-color, $gray-color);
+  font-size: 15px;
+  background-color: $transparent-bg;
+  padding: 0;
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $transparent-bg;
+    }
+  }
+  &.btn-secondary:focus {
+    background-color: inherit;
+    border-color: inherit;
+  }
+}
+
+.btn-reload {
+  @include btn-styles($white-color, $white-color);
+  background-color: $transparent-bg;
+  padding: 0;
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $transparent-bg;
+    }
+  }
+  &.btn-secondary:focus {
+    background-color: inherit;
+    border-color: inherit;
+  }
+}
+
+.btn-add {
+  @include btn-styles($success-color, $white-color);
+  background-color: $transparent-bg;
+  padding: 0;
+
+  &.disabled,
+  &:disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      background-color: $transparent-bg;
+    }
+  }
+}
+
+.btn-outlined {
+  background-color: transparent;
+  border: 1px solid #8c8c94;
+  color: #8c8c94;
+
+  &.disabled,
+  &:disabled {
+    background: transparent;
+  }
+}
+
+.btn-eq-width .btn {
+  width: 151px;
+}
+
+.btn-xs {
+  padding: $spacing-xs $spacing-sm;
+  font-size: 12px;
+  line-height: normal;
+}
+
+.kebab {
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0 $spacing-sm;
+
+  div {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: $black-color;
+  }
+}
+
+.tabs-switcher {
+  line-height: 36px;
+  .btn {
+    color: inherit;
+
+    &.active {
+      color: $primary-color !important;
+    }
+  }
+}
+
+.badge-light {
+  border: 1px solid #d6e7f9;
+  font-weight: 500;
+  color: $primary-color !important;
+  cursor: pointer !important;
+  background-color: #f8f9fa;
+}
+
+.badge-light:hover {
+  opacity: 0.6;
+  background-color: #f8f9fa !important;
+  border: 1px solid #d6e7f9;
+  font-weight: 500;
+  color: $primary-color !important;
+}

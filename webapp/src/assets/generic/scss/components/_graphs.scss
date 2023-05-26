@@ -1,0 +1,56 @@
+.graph-block {
+  align-items: center;
+  position: relative;
+
+  .form-group {
+    margin-bottom: 0 !important;
+
+    .multiBlock {
+      width: 158px;
+      margin-left: $spacing-xs;
+    }
+  }
+
+  div > .interval {
+    margin-bottom: $spacing-xs !important;
+  }
+
+  select {
+    display: inline-block;
+    max-width: 150px;
+    margin-left: $spacing-xs;
+  }
+}
+
+#graph-topology-graph-wrapper {
+  border: 1px solid lighten($gray-color, 15%);
+}
+
+.graph-sm {
+  height: 135px;
+}
+
+.graph-lg {
+  height: 380px;
+}
+
+.graph-md {
+  height: 250px;
+}
+
+@media screen and (max-width: $width-sm) {
+  .graph-block > .text-right {
+    margin-top: $spacing-xs;
+    text-align: left !important;
+  }
+}
+
+#card-aiming-stats {
+  .progress-bar {
+    overflow: visible;
+    &.bg-warning,
+    &.bg-danger {
+      color: $black-color;
+    }
+  }
+}

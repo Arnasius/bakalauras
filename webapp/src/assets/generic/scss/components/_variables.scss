@@ -1,0 +1,221 @@
+/* -- */
+/* MAIN COLORS AND BACKGROUNDS */
+/* -- */
+
+// Design v2 variables START
+$background-grey: #f5f5f6;
+$background-dark: #2d2d32;
+$background-sidebar-link-active: #e3ecf6;
+
+$font-sidebar-nav: #a0a0a5;
+$font-sidebar-nav-active: #007aff;
+$font-labels: #a0a0a5;
+$font-corner-links: #c5c5c5;
+$font-table-actions: #bebec3;
+
+// Designg v2 variables END
+
+$primary-color: #007aff !default;
+$primary-states-color: lighten($primary-color, 40%) !default;
+$primary-color-transparent: rgba(74, 144, 226, 0.1) !default;
+
+$transparent-bg: transparent !default;
+$white-color: #ffffff !default;
+
+$black-color: #5a5a5f !default;
+
+$orange-color: #ff8c00 !default;
+$orange-color-transparent: rgba(223, 145, 90, 0.1) !default;
+$gray-color: #b4b4b9 !default;
+$medium-gray: lighten(#dcdce1, 8%) !default;
+$light-gray: lighten($medium-gray, 1%) !default;
+$table-gray: #fbfbfb;
+$dark-gray: darken($gray-color, 15%) !default;
+
+$default-color: darken($gray-color, 15%) !default;
+$default-states-color: lighten($default-color, 35%) !default;
+
+$success-color: #18ce0f !default;
+$success-states-color: lighten($success-color, 6%) !default;
+
+$warning-color: #ffb236 !default;
+$warning-states-color: lighten($warning-color, 6%) !default;
+
+$default-box-shadow: #c0defe !default;
+
+$danger-color: #fa4c4b !default;
+$danger-color-light: rgba(255, 85, 85, 0.25) !default;
+$danger-color-light-opaque: #f8d3d4 !default;
+$danger-states-color: lighten($danger-color, 30%) !default;
+
+$brand-primary: $primary-color !default;
+$brand-info: $primary-color !default;
+$brand-success: $success-color !default;
+$brand-warning: $warning-color !default;
+$brand-danger: $danger-color !default;
+$brand-negative: darken($medium-gray, 8%) !default;
+$logo-background: $background-dark;
+
+/* -- */
+/* SHADOWS, BORDERS, OPACITIES */
+/* -- */
+
+$none: 0 !default;
+
+$opacity-gray-5: rgba(222, 222, 222, 0.5) !important;
+
+$opacity-5: rgba(255, 255, 255, 0.5) !default;
+$opacity-8: rgba(255, 255, 255, 0.8) !default;
+$opacity-1: rgba(255, 255, 255, 0.1) !default;
+$opacity-2: rgba(255, 255, 255, 0.2) !default;
+
+/* -- */
+/* FONTS */
+/* -- */
+
+$sans-serif-family: "Roboto", "Helvetica Neue", Arial, sans-serif;
+
+//font sizes:
+$font-size-h1: 24px !default;
+$font-size-h2: 21px !default;
+$font-size-h3: 16px !default;
+$font-size-base: 14px !default;
+$font-size-sm: 10px !default;
+
+//line-heights:
+$line-height-h1-h2: 32px !default;
+$line-height-h3: 24px !default;
+$line-height-base: 21px !default;
+//--------
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+
+/* -- */
+/* COMPONENTS */
+/* -- */
+
+$border: 1px solid !default;
+$border-radius-small: 0.1875rem !default;
+$border-radius-large: 1rem !default;
+
+$box-shadow: 0 1px 5px 1px rgba(39, 39, 39, 0.1);
+$box-shadow-bottom: 0 25px 15px -15px rgba(39, 39, 39, 0.1);
+$blue-shadow: 0 1px 15px 1px rgb(74, 144, 226);
+
+$topbar-x: topbar-x !default;
+$topbar-back: topbar-back !default;
+$bottombar-x: bottombar-x !default;
+$bottombar-back: bottombar-back !default;
+
+/* -- */
+/* PADDINGS, MARGINS */
+/* -- */
+
+$spacing-lg: 64px;
+$spacing-md: 32px;
+$spacing-sm: 16px;
+$spacing-xs: 8px;
+
+$spacer: $spacing-xs !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: (
+      $spacer * 1
+    ),
+    2: (
+      $spacer * 2
+    ),
+    3: $spacer * 4,
+    4: (
+      $spacer * 8
+    )
+  ),
+  $spacers
+);
+
+/* -- */
+/* SIDEBAR */
+/* -- */
+
+$sidebar-width: 235px !default;
+$sidebar-collapsed-width: 66px !default;
+$sidebar-bg: $background-grey !default;
+$logo-width: 200px !default;
+$logo-height: 50px !default;
+$logo-spacing: $spacing-lg $spacing-md !default;
+$sidebar-mobile-width: 220px;
+
+/* -- */
+/* LAYOUT */
+/* -- */
+
+$header-background: $background-dark !default;
+$header-height: 80px !default;
+$header-font-color: #ffffff;
+
+/* -- */
+/*  BREAKPOINTS */
+/* -- */
+
+$width-xs: 360px !default;
+$width-sm: 576px !default;
+$width-md: 768px !default;
+$width-lg: 992px !default;
+$width-xl: 1200px !default;
+$changes-block-to-bottom: $width-xl !default;
+
+/* -- */
+/*  TRANSITIONS */
+/* -- */
+
+$transition-duration: 0.2s !default;
+$transition-timing: ease-in !default;
+
+$transition: $transition-duration $transition-timing;
+$transition-opacity: opacity $transition-duration $transition-timing;
+$transition-opacity-width: opacity $transition-duration,
+  width $transition-duration $transition-timing;
+
+/* -- */
+/*  CHARTS */
+/* -- */
+
+$first-line: #50a9f9;
+$first-line-transparent: #cce4ff;
+$second-line: #c8c8cd;
+$second-line-transparent: #ebebee;
+$third-line: $dark-gray;
+$third-line-transparent: rgba(180, 180, 185, 0.1);
+$chart-background: $white-color;
+$chart-title-font-color: $black-color;
+$chart-font-color: $black-color;
+$chart-font-style: $font-weight-bold;
+$darken-first-Line: darken($orange-color-transparent, 10);
+$fourth-line-transparent: rgba(74, 144, 226, 0.2);
+$darkenOrange: rgba(211, 135, 81, 0.2);
+
+:export {
+  firstLine: $first-line;
+  firstLineTransparent: $first-line-transparent;
+  secondLine: $second-line;
+  secondLineTransparent: $second-line-transparent;
+  thirdLine: $third-line;
+  thirdLineTransparent: $third-line-transparent;
+  chartBackground: $chart-background;
+  chartTitleFontColor: $chart-title-font-color;
+  chartFontColor: $chart-font-color;
+  chartFontStyle: $chart-font-style;
+  orangeColor: $orange-color;
+  orangeTransparentColor: $orange-color-transparent;
+  darkenFirstLine: $darken-first-Line;
+  fourthLineTransparent: $fourth-line-transparent;
+  darkenOrangeTransparent: $darkenOrange;
+  transparent: $transparent-bg;
+  primaryColor: $primary-color;
+  primaryColorTransparent: $primary-color-transparent;
+  greenColor: $success-color;
+}

@@ -1,0 +1,379 @@
+.card {
+  margin-bottom: $spacing-md;
+  box-shadow: $box-shadow;
+  border: none;
+  color: $black-color;
+
+  > [class*="card-"] {
+    background: transparent;
+    padding: $spacing-sm * 1.5;
+    border: none;
+  }
+
+  .config-page [class*="card-"] + [class*="card-"] {
+    padding-top: 0;
+  }
+
+  .graph-block .about {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .xs-size {
+    font-size: 12px;
+  }
+
+  .header {
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+  }
+
+  .card-header {
+    line-height: $spacing-lg;
+    padding: $spacing-sm $spacing-sm 0 $spacing-sm;
+    margin-bottom: $spacing-sm;
+
+    .btn {
+      margin-left: $spacing-sm;
+    }
+  }
+
+  .card-title {
+    color: $black-color;
+    font-size: $font-size-h3;
+    font-weight: $font-weight-bold;
+    margin: auto 0;
+
+    &:not(.with-tooltip) {
+      @media screen and (max-width: $width-md) {
+        margin-bottom: $spacing-xs;
+      }
+    }
+
+    i.with-status,
+    &.with-tooltip > i {
+      display: flex;
+      align-items: center;
+
+      div,
+      .iface-title {
+        display: inline-flex;
+        flex-direction: column;
+
+        span:first-child {
+          color: $black-color;
+        }
+      }
+
+      &.negative {
+        div * {
+          color: $dark-gray !important;
+        }
+
+        &::before {
+          background-color: $dark-gray !important;
+        }
+      }
+    }
+
+    .iface-Status {
+      font-size: $font-size-sm;
+      font-weight: 500;
+    }
+
+    i:not(.refreshBtn) {
+      font-size: $font-size-base;
+      font-weight: bold;
+
+      &::before {
+        background-color: $primary-color;
+        padding: $spacing-xs;
+        color: $white-color;
+        margin-right: $spacing-xs;
+        font-weight: bold;
+        vertical-align: middle;
+      }
+
+      span {
+        font-family: "Helvetica Neue", Arial, sans-serif;
+      }
+    }
+
+    .navbar-toggler .navbar-toggler-bar {
+      background: $dark-gray;
+    }
+  }
+
+  .card-row-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: $font-size-h2;
+    }
+  }
+
+  .card-info-row {
+    color: $dark-gray;
+    background: $light-gray;
+    padding: $spacing-sm;
+  }
+
+  .nav-tabs {
+    background: $light-gray;
+    margin-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: none;
+    box-shadow: none;
+
+    .nav-info {
+      font-size: $font-size-base * 0.8;
+      font-weight: bold;
+      padding: $spacing-sm;
+      color: $dark-gray;
+
+      @media screen and (max-width: $width-md) {
+        text-transform: uppercase;
+
+        &:not(:first-child) {
+          margin-top: $spacing-sm;
+        }
+      }
+    }
+
+    .nav-item * {
+      height: 100%;
+    }
+
+    .nav-link {
+      border-radius: 0;
+      color: $black-color;
+
+      &.disabled {
+        color: $font-sidebar-nav;
+      }
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link,
+    button:active {
+      color: $primary-color;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus,
+    button:hover,
+    button:focus {
+      border-color: $white-color;
+      background: $white-color;
+      color: $black-color;
+    }
+
+    .nav-button {
+      flex-grow: 1;
+    }
+
+    button:not(.navbar-toggler) {
+      border: none;
+      border-radius: 0;
+      background-color: $medium-gray;
+      color: $black-color;
+
+      &:hover {
+        background-color: $white-color;
+      }
+
+      &:active {
+        color: $white-color;
+        background-color: $primary-states-color;
+      }
+    }
+  }
+
+  .mobile-config-menu {
+    .toggler-wrapper {
+      background: $light-gray;
+
+      @media screen and (max-width: $width-lg) {
+        & + .open {
+          .nav-item,
+          .nav-link,
+          button {
+            max-width: 100% !important;
+          }
+
+          .nav-item * {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  /* 
+  When card component is used inside card
+  Used for some config pages 
+  */
+  .card {
+    margin-bottom: 0px;
+    box-shadow: none;
+    border-top: 2px solid $light-gray;
+    border-radius: 0;
+
+    .card-header {
+      margin-bottom: 0;
+      font-weight: $font-weight-bold;
+    }
+
+    @media screen and (min-width: $width-md) {
+      &:nth-child(odd) {
+        border-right: 2px solid $light-gray;
+      }
+
+      &:last-child:not([class*="col-"]) {
+        border-right: none;
+      }
+    }
+
+    @media screen and (min-width: $width-md) and (max-width: $width-lg) {
+      &:nth-child(odd).no-right-border-lg {
+          border-right: 0;
+        }
+      }
+
+    > [class*="card-"] {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+
+  .tab-pane > .card {
+    border: none;
+    margin-top: 1px;
+  }
+
+  &.iface-card {
+    .card-header {
+      line-height: $spacing-md;
+
+      .pull-right {
+        padding: 0 !important;
+      }
+
+      @media screen and (max-width: $width-lg) {
+        .card-title {
+          padding: $spacing-sm;
+        }
+      }
+    }
+  }
+
+  @keyframes box {
+    from {
+      box-shadow: $blue-shadow;
+    }
+    to {
+      box-shadow: none;
+    }
+  }
+
+  .highlighted {
+    box-shadow: $blue-shadow;
+    z-index: 1;
+    animation: box 3s linear 0s 1 forwards;
+  }
+
+  &.card-header-nav {
+    overflow: hidden;
+
+    .card-header {
+      line-height: $line-height-h1-h2;
+    }
+  }
+}
+
+.widget-information {
+  .label-col {
+    max-width: 121px;
+  }
+}
+
+.label-fixed,
+.value-info {
+  min-width: 75px;
+  max-width: 130px;
+  width: fit-content;
+  -webkit-box-flex: 0;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: capitalize;
+}
+
+.value-info {
+  min-width: inherit;
+  max-width: calc(100% - 75px) !important;
+}
+
+.iface-title {
+  max-width: 170px;
+}
+
+.mw-content {
+  max-width: fit-content !important;
+}
+
+@media screen and (min-width: $width-sm) {
+  .card.widget-information .card-body {
+    .col + .col,
+    .col + [class*="col-"],
+    [class*="col-"] + .col,
+    [class*="col-"] + [class*="col-"] {
+      border-left: 1px solid $medium-gray;
+    }
+  }
+
+  #card-system-resources {
+    height: calc(100% - 32px) !important;
+  }
+}
+
+@media screen and (max-width: $width-lg) {
+  .card {
+    margin-bottom: $spacing-sm;
+  }
+
+  .row-header {
+    white-space: nowrap;
+    margin-top: $spacing-xs !important;
+  }
+}
+
+.ssh-card {
+  font-size: $font-size-base !important;
+}
+
+#card-mesh-wizard {
+  .card-body {
+    border-top: 2px solid $light-gray;
+  }
+  .card-footer {
+    border-top: 2px solid $light-gray;
+  }
+  .col-md-4 + .col-md-4 {
+    border-left: 2px solid $light-gray;
+  }
+}
+
+.label-mt {
+  margin-top: 30px !important;
+}
+@media screen and (max-width: $width-lg) {
+  .label-mt-lg {
+    margin-top: 20px !important;
+  }
+}

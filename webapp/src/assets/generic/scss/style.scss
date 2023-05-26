@@ -1,0 +1,38 @@
+@import "components/variables";
+@import "components/mixins";
+@import "components/images";
+
+// Core CSS
+@import "components/buttons";
+@import "components/inputs";
+@import "components/typography";
+@import "components/misc";
+
+// components
+@import "components/navbar";
+@import "components/alerts";
+@import "components/nucleo-outline";
+@import "components/tables";
+@import "components/layout";
+@import "components/events";
+
+// cards
+@import "components/cards";
+
+// Modals
+@import "components/modals";
+
+// Popovers
+@import "components/popovers";
+
+// graph
+@import "components/graphs-circle";
+
+// custom fonts
+@import "components/8dev-fonts";
+
+// Graphs
+@import "components/graphs";
+
+// Custom components
+@import "components/components";

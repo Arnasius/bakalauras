@@ -1,0 +1,412 @@
+.navbar {
+  &.navbar-absolute {
+    background-color: $header-background;
+    height: $header-height;
+    left: $sidebar-width;
+  }
+
+  .headerbar-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    ul {
+      align-items: center;
+      li {
+        margin: 0 $spacing-sm;
+        color: $header-font-color;
+        font-size: $font-size-h3;
+        i {
+          vertical-align: middle;
+          cursor: pointer;
+        }
+        a {
+          color: $header-font-color;
+          outline: none !important;
+        }
+      }
+    }
+
+    .navbar-toggle:hover .navbar-toggler-bar.bar2 {
+      width: 22px;
+    }
+
+    .navbar-toggler {
+      vertical-align: middle;
+      padding-left: 0;
+
+      &:focus,
+      &:hover {
+        outline: none;
+      }
+    }
+
+    .header-brand {
+      font-size: $font-size-h2;
+      font-weight: bold;
+      margin: 0;
+
+      .navbar-breadcrumb {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+
+        #child {
+          font-size: $font-size-base;
+          font-weight: 400;
+        }
+
+        #child::before {
+          content: "\ea3b";
+          font: 14px/1 "Nucleo Outline";
+          vertical-align: middle;
+          margin: 0 $spacing-xs;
+        }
+      }
+
+      * {
+        cursor: auto;
+      }
+    }
+
+    .save-changes-block {
+      margin-right: $spacing-md;
+
+      .btn-group {
+        vertical-align: baseline;
+      }
+
+      .saveBtn,
+      .btn:not(:first-child) {
+        margin-left: $spacing-xs;
+      }
+    }
+
+    .organization-switch {
+      color: #ffffff;
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: none !important;
+      border-left: 1px solid $font-sidebar-nav;
+      border-radius: 0px;
+      margin-left: -20px;
+      min-width: 200px;
+    }
+  }
+}
+
+.headerbar-wrapper {
+  .navbar-toggler {
+    .navbar-toggler-bar {
+      background: $white-color;
+    }
+  }
+}
+
+.navbar-toggler {
+  display: none;
+  padding: 0 $spacing-xs 0 0;
+
+  .navbar-toggler-bar {
+    display: block;
+    width: 22px;
+    height: 1px;
+    border-radius: 1px;
+    background: $black-color;
+
+    & + .navbar-toggler-bar {
+      margin-top: 7px;
+    }
+
+    &.bar2 {
+      width: 17px;
+      transition: width 0.2s linear;
+    }
+  }
+}
+
+.config-nav-toggler {
+  display: none;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid $white-color;
+  background: $white-color;
+  margin-bottom: $spacing-md;
+  box-shadow: $box-shadow;
+
+  .nav-link {
+    border: none;
+    color: $dark-gray;
+    padding: $spacing-sm;
+  }
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $primary-color;
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    background: $light-gray;
+    color: $black-color;
+    cursor: pointer;
+  }
+}
+
+.nav-fv-versions {
+  z-index: 4;
+  color: $medium-gray;
+
+  li {
+    padding: $spacing-sm $spacing-sm;
+  }
+}
+
+.corner-menu {
+  .nav-tabs {
+    justify-content: flex-end;
+    background: $white-color !important;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+
+    .nav-link {
+      padding: $spacing-xs;
+      padding-top: 0px;
+      text-transform: uppercase;
+      color: $font-corner-links !important;
+      font-weight: bold;
+
+      &.active,
+      &.show {
+        color: $black-color !important;
+        background-color: $white-color !important;
+      }
+
+      &:hover,
+      &:focus {
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .nav-item {
+    text-align: center;
+  }
+}
+
+.navbar-status {
+  div {
+    padding: $spacing-xs;
+    pointer-events: none;
+
+    &.status-red {
+      background-color: $danger-color;
+    }
+
+    &.status-yellow {
+      background-color: $warning-color;
+    }
+
+    &.status-green {
+      background-color: $success-color;
+    }
+
+    &.status-grey {
+      background-color: $dark-gray;
+    }
+  }
+}
+
+.log-out i {
+  transform: rotate(90deg);
+  font-size: $font-size-base * 1.2;
+  }
+
+@media screen and (max-width: $changes-block-to-bottom) {
+  .save-changes-block {
+    position: fixed;
+    background: white;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: $spacing-xs $spacing-sm;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: $box-shadow;
+
+    .btn {
+      box-shadow: $box-shadow;
+    }
+  }
+}
+
+@media screen and (max-width: $width-lg) {
+  .nav-open {
+    .sidebar {
+      @include transform-translate-x(0px);
+    }
+
+    body {
+      overflow-x: hidden;
+    }
+  }
+  .navbar-absolute {
+    margin: 0 !important;
+  }
+
+  .navbar .headerbar-wrapper {
+    .navbar-nav {
+      flex-direction: row !important;
+    }
+
+    .navbar-toggler-bar {
+      position: relative;
+    }
+
+    & .toggled .navbar-toggler-bar {
+      width: 24px;
+
+      & + .navbar-toggler-bar {
+        margin-top: 5px;
+      }
+    }
+
+    .bar1 {
+      top: 0px;
+      @include bar-animation($topbar-back);
+    }
+    .bar2 {
+      opacity: 1;
+    }
+    .bar3 {
+      bottom: 0px;
+      @include bar-animation($bottombar-back);
+    }
+    .toggled .bar1 {
+      top: 6px;
+      @include bar-animation($topbar-x);
+    }
+    .toggled .bar2 {
+      opacity: 0;
+    }
+    .toggled .bar3 {
+      bottom: 6px;
+      @include bar-animation($bottombar-x);
+    }
+
+    @include topbar-x-rotation();
+    @include topbar-back-rotation();
+    @include bottombar-x-rotation();
+    @include bottombar-back-rotation();
+  }
+
+  .headerbar-wrapper .header-stats li:not(.navbar-status) {
+    display: none;
+  }
+
+  .main-panel {
+    padding-top: 100px !important;
+  }
+
+  .mobile-config-menu {
+    position: relative;
+    margin-bottom: $spacing-xs;
+    .toggler-wrapper {
+      width: 100%;
+      background: $white-color;
+      height: 50px;
+      box-shadow: $box-shadow;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .config-nav-toggler {
+        display: block;
+        margin: auto;
+        padding: $spacing-sm;
+        outline: none;
+      }
+
+      .nav-info {
+        text-align: center;
+
+        &::after {
+          content: "\ea3b";
+          font: 14px/1 "Nucleo Outline";
+          margin: 0 $spacing-xs;
+        }
+      }
+
+      & + .nav-tabs {
+        min-width: 160px;
+        width: 100% !important;
+        max-height: 0px;
+        display: block;
+        overflow: hidden;
+        position: absolute;
+        transition: max-height 0.3s ease-out;
+        right: 0;
+        text-align: center;
+        z-index: 4;
+        margin-bottom: 0;
+        box-shadow: 0 10px 15px 1px rgba(39, 39, 39, 0.1);
+        height: auto;
+        .nav-link {
+          max-width: 100% !important;
+        }
+      }
+
+      & + .open {
+        max-height: 1000px;
+        transition: max-height 1s ease-in !important;
+      }
+    }
+  }
+
+  .corner-menu {
+    .toggler-wrapper {
+      & + .open {
+        width: fit-content;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $width-md) {
+  .navbar-toggler {
+    display: block;
+  }
+
+  .navbar {
+    &.navbar-absolute {
+      left: 0;
+    }
+  }
+}
+
+@media (min-width: $width-md) {
+  .header-actions,
+  .header-stats div + li {
+    margin-left: $spacing-xs;
+  }
+}
+
+@media screen and (max-width: $width-md) {
+  .nav-open {
+    .main-panel {
+      animation: shrink-main .5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+      width: calc(100% - #{$sidebar-mobile-width});
+    }
+  }
+}
+
+@media screen and (max-width: $width-sm) {
+  .nav-open {
+    .main-panel {
+      animation: none;
+      width: 100%;
+    }
+  }
+}

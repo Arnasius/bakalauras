@@ -1,0 +1,1873 @@
+{
+	"timezones": {
+		"Africa/Abidjan": {
+			"offset": 0,
+			"country": "CI"
+		},
+		"Africa/Accra": {
+			"offset": 0,
+			"country": "GH"
+		},
+		"Africa/Addis_Ababa": {
+			"offset": 3,
+			"country": "ET"
+		},
+		"Africa/Algiers": {
+			"offset": 1,
+			"country": "DZ"
+		},
+		"Africa/Asmara": {
+			"offset": 3,
+			"country": "ER"
+		},
+		"Africa/Bamako": {
+			"offset": 0,
+			"country": "ML"
+		},
+		"Africa/Bangui": {
+			"offset": 1,
+			"country": "CF"
+		},
+		"Africa/Banjul": {
+			"offset": 0,
+			"country": "GM"
+		},
+		"Africa/Bissau": {
+			"offset": 0,
+			"country": "GW"
+		},
+		"Africa/Blantyre": {
+			"offset": 2,
+			"country": "MW"
+		},
+		"Africa/Brazzaville": {
+			"offset": 1,
+			"country": "CG"
+		},
+		"Africa/Bujumbura": {
+			"offset": 2,
+			"country": "BI"
+		},
+		"Asia/Oral": {
+			"offset": 5,
+			"country": "KZ"
+		},
+		"Africa/Cairo": {
+			"offset": 2,
+			"country": "EG"
+		},
+		"Africa/Casablanca": {
+			"offset": 0,
+			"country": "MA"
+		},
+		"Africa/Ceuta": {
+			"offset": 1,
+			"country": "ES"
+		},
+		"Africa/Conakry": {
+			"offset": 0,
+			"country": "GN"
+		},
+		"Africa/Dakar": {
+			"offset": 0,
+			"country": "SN"
+		},
+		"Africa/Dar_es_Salaam": {
+			"offset": 3,
+			"country": "TZ"
+		},
+		"Asia/Yekaterinburg": {
+			"offset": 6,
+			"country": "RU"
+		},
+		"Africa/Djibouti": {
+			"offset": 3,
+			"country": "DJ"
+		},
+		"Africa/Douala": {
+			"offset": 1,
+			"country": "CM"
+		},
+		"Africa/Freetown": {
+			"offset": 0,
+			"country": "SL"
+		},
+		"Africa/Gaborone": {
+			"offset": 2,
+			"country": "BW"
+		},
+		"Africa/Harare": {
+			"offset": 2,
+			"country": "ZW"
+		},
+		"Africa/El_Aaiun": {
+			"offset": 0,
+			"country": "EH"
+		},
+		"Africa/Johannesburg": {
+			"offset": 2,
+			"country": "ZA"
+		},
+		"Africa/Juba": {
+			"offset": 3,
+			"country": "SS"
+		},
+		"Africa/Kampala": {
+			"offset": 3,
+			"country": "UG"
+		},
+		"Africa/Khartoum": {
+			"offset": 3,
+			"country": "SD"
+		},
+		"Africa/Kinshasa": {
+			"offset": 1,
+			"country": "CD"
+		},
+		"Africa/Lagos": {
+			"offset": 1,
+			"country": "NG"
+		},
+		"Africa/Libreville": {
+			"offset": 1,
+			"country": "GA"
+		},
+		"Africa/Lome": {
+			"offset": 0,
+			"country": "TG"
+		},
+		"Africa/Kigali": {
+			"offset": 2,
+			"country": "RW"
+		},
+		"Africa/Luanda": {
+			"offset": 1,
+			"country": "AO"
+		},
+		"Africa/Lubumbashi": {
+			"offset": 2,
+			"country": "CD"
+		},
+		"Africa/Lusaka": {
+			"offset": 2,
+			"country": "ZM"
+		},
+		"Africa/Malabo": {
+			"offset": 1,
+			"country": "GQ"
+		},
+		"Africa/Maputo": {
+			"offset": 2,
+			"country": "MZ"
+		},
+		"Africa/Mbabane": {
+			"offset": 2,
+			"country": "SZ"
+		},
+		"Africa/Mogadishu": {
+			"offset": 3,
+			"country": "SO"
+		},
+		"Africa/Monrovia": {
+			"offset": 0,
+			"country": "LR"
+		},
+		"Africa/Nairobi": {
+			"offset": 3,
+			"country": "KE"
+		},
+		"Africa/Maseru": {
+			"offset": 2,
+			"country": "LS"
+		},
+		"Africa/Ndjamena": {
+			"offset": 1,
+			"country": "TD"
+		},
+		"Africa/Niamey": {
+			"offset": 1,
+			"country": "NE"
+		},
+		"Africa/Nouakchott": {
+			"offset": 0,
+			"country": "MR"
+		},
+		"Africa/Ouagadougou": {
+			"offset": 0,
+			"country": "BF"
+		},
+		"Africa/Porto-Novo": {
+			"offset": 1,
+			"country": "BJ"
+		},
+		"Africa/Tunis": {
+			"offset": 1,
+			"country": "TN"
+		},
+		"Africa/Sao_Tome": {
+			"offset": 0,
+			"country": "ST"
+		},
+		"Africa/Tripoli": {
+			"offset": 2,
+			"country": "LY"
+		},
+		"Africa/Windhoek": {
+			"offset": 2,
+			"country": "NA"
+		},
+		"America/Adak": {
+			"offset": -10,
+			"country": "US"
+		},
+		"America/Argentina/Salta": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Anchorage": {
+			"offset": -9,
+			"country": "US"
+		},
+		"America/Anguilla": {
+			"offset": -4,
+			"country": "AI"
+		},
+		"America/Antigua": {
+			"offset": -4,
+			"country": "AG"
+		},
+		"America/Araguaina": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Argentina/Buenos_Aires": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Catamarca": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Cordoba": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Jujuy": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/La_Rioja": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Mendoza": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Rio_Gallegos": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/San_Juan": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/San_Luis": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Argentina/Tucuman": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Aruba": {
+			"offset": -4,
+			"country": "AW"
+		},
+		"America/Argentina/Ushuaia": {
+			"offset": -3,
+			"country": "AR"
+		},
+		"America/Asuncion": {
+			"offset": -3,
+			"country": "PY"
+		},
+		"America/Bahia_Banderas": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Atikokan": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Bahia": {
+			"offset": -2,
+			"country": "BR"
+		},
+		"America/Barbados": {
+			"offset": -4,
+			"country": "BB"
+		},
+		"America/Belem": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Belize": {
+			"offset": -6,
+			"country": "BZ"
+		},
+		"America/Blanc-Sablon": {
+			"offset": -4,
+			"country": "CA"
+		},
+		"America/Boa_Vista": {
+			"offset": -4,
+			"country": "BR"
+		},
+		"America/Bogota": {
+			"offset": -5,
+			"country": "CO"
+		},
+		"America/Boise": {
+			"offset": -7,
+			"country": "US"
+		},
+		"America/Cambridge_Bay": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"America/Campo_Grande": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Cancun": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Caracas": {
+			"offset": -4.5,
+			"country": "VE"
+		},
+		"America/Cayenne": {
+			"offset": -3,
+			"country": "GF"
+		},
+		"America/Cayman": {
+			"offset": -5,
+			"country": "KY"
+		},
+		"America/Chicago": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/Chihuahua": {
+			"offset": -7,
+			"country": "MX"
+		},
+		"America/Coral_Harbour": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Costa_Rica": {
+			"offset": -6,
+			"country": "CR"
+		},
+		"America/Creston": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"America/Cuiaba": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Curacao": {
+			"offset": -4,
+			"country": "CW"
+		},
+		"America/Danmarkshavn": {
+			"offset": 0,
+			"country": "GL"
+		},
+		"America/Dawson": {
+			"offset": -8,
+			"country": "CA"
+		},
+		"America/Dawson_Creek": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"America/Denver": {
+			"offset": -7,
+			"country": "US"
+		},
+		"America/Detroit": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Dominica": {
+			"offset": -4,
+			"country": "DM"
+		},
+		"America/Edmonton": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"America/Eirunepe": {
+			"offset": -4,
+			"country": "BR"
+		},
+		"America/El_Salvador": {
+			"offset": -6,
+			"country": "SV"
+		},
+		"America/Fortaleza": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Glace_Bay": {
+			"offset": -4,
+			"country": "CA"
+		},
+		"America/Godthab": {
+			"offset": -3,
+			"country": "GL"
+		},
+		"America/Goose_Bay": {
+			"offset": -4,
+			"country": "CA"
+		},
+		"America/Grand_Turk": {
+			"offset": -5,
+			"country": "TC"
+		},
+		"America/Grenada": {
+			"offset": -4,
+			"country": "GD"
+		},
+		"America/Guadeloupe": {
+			"offset": -4,
+			"country": "GP"
+		},
+		"America/Guatemala": {
+			"offset": -6,
+			"country": "GT"
+		},
+		"America/Guayaquil": {
+			"offset": -5,
+			"country": "EC"
+		},
+		"America/Guyana": {
+			"offset": -4,
+			"country": "GY"
+		},
+		"America/Halifax": {
+			"offset": -4,
+			"country": "CA"
+		},
+		"America/Havana": {
+			"offset": -5,
+			"country": "CU"
+		},
+		"America/Hermosillo": {
+			"offset": -7,
+			"country": "MX"
+		},
+		"America/Indiana/Petersburg": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Indiana/Tell_City": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/Indiana/Vevay": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Indiana/Indianapolis": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Indiana/Knox": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/Indiana/Marengo": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Indiana/Vincennes": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Indiana/Winamac": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Inuvik": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"America/Iqaluit": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/La_Paz": {
+			"offset": -4,
+			"country": "BO"
+		},
+		"America/Jamaica": {
+			"offset": -5,
+			"country": "JM"
+		},
+		"America/Juneau": {
+			"offset": -9,
+			"country": "US"
+		},
+		"America/Kentucky/Louisville": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Kentucky/Monticello": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Kralendijk": {
+			"offset": -4,
+			"country": "BQ"
+		},
+		"America/Lima": {
+			"offset": -5,
+			"country": "PE"
+		},
+		"America/Managua": {
+			"offset": -6,
+			"country": "NI"
+		},
+		"America/Manaus": {
+			"offset": -4,
+			"country": "BR"
+		},
+		"America/Los_Angeles": {
+			"offset": -8,
+			"country": "US"
+		},
+		"America/Lower_Princes": {
+			"offset": -4,
+			"country": "SX"
+		},
+		"America/Maceio": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Marigot": {
+			"offset": -4,
+			"country": "MF"
+		},
+		"America/Martinique": {
+			"offset": -4,
+			"country": "MQ"
+		},
+		"America/Matamoros": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Mazatlan": {
+			"offset": -7,
+			"country": "MX"
+		},
+		"America/Menominee": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/Mexico_City": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Merida": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Metlakatla": {
+			"offset": -8,
+			"country": "US"
+		},
+		"America/Miquelon": {
+			"offset": -3,
+			"country": "PM"
+		},
+		"America/Moncton": {
+			"offset": -4,
+			"country": "CA"
+		},
+		"America/Monterrey": {
+			"offset": -6,
+			"country": "MX"
+		},
+		"America/Montevideo": {
+			"offset": -2,
+			"country": "UY"
+		},
+		"America/Montreal": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Montserrat": {
+			"offset": -4,
+			"country": "MS"
+		},
+		"America/Nassau": {
+			"offset": -5,
+			"country": "BS"
+		},
+		"America/New_York": {
+			"offset": -5,
+			"country": "US"
+		},
+		"America/Nipigon": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Nome": {
+			"offset": -9,
+			"country": "US"
+		},
+		"America/Noronha": {
+			"offset": -2,
+			"country": "BR"
+		},
+		"America/North_Dakota/Beulah": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/North_Dakota/Center": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/North_Dakota/New_Salem": {
+			"offset": -6,
+			"country": "US"
+		},
+		"America/Ojinaga": {
+			"offset": -7,
+			"country": "MX"
+		},
+		"America/Panama": {
+			"offset": -5,
+			"country": "PA"
+		},
+		"America/Pangnirtung": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Paramaribo": {
+			"offset": -3,
+			"country": "SR"
+		},
+		"America/Phoenix": {
+			"offset": -7,
+			"country": "US"
+		},
+		"America/Port-au-Prince": {
+			"offset": -5,
+			"country": "HT"
+		},
+		"America/Port_of_Spain": {
+			"offset": -4,
+			"country": "TT"
+		},
+		"America/Porto_Velho": {
+			"offset": -4,
+			"country": "BR"
+		},
+		"America/Puerto_Rico": {
+			"offset": -4,
+			"country": "PR"
+		},
+		"America/Rainy_River": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Rankin_Inlet": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Recife": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Regina": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Resolute": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Rio_Branco": {
+			"offset": -4,
+			"country": "BR"
+		},
+		"America/Santa_Isabel": {
+			"offset": -8,
+			"country": "MX"
+		},
+		"America/Santarem": {
+			"offset": -3,
+			"country": "BR"
+		},
+		"America/Santiago": {
+			"offset": -3,
+			"country": "CL"
+		},
+		"America/Santo_Domingo": {
+			"offset": -4,
+			"country": "DO"
+		},
+		"America/Scoresbysund": {
+			"offset": -1,
+			"country": "GL"
+		},
+		"America/Sao_Paulo": {
+			"offset": -2,
+			"country": "BR"
+		},
+		"America/Sitka": {
+			"offset": -9,
+			"country": "US"
+		},
+		"America/St_Barthelemy": {
+			"offset": -4,
+			"country": "BL"
+		},
+		"America/St_Johns": {
+			"offset": -3.5,
+			"country": "CA"
+		},
+		"America/Thule": {
+			"offset": -4,
+			"country": "GL"
+		},
+		"America/St_Kitts": {
+			"offset": -4,
+			"country": "KN"
+		},
+		"America/St_Lucia": {
+			"offset": -4,
+			"country": "LC"
+		},
+		"America/St_Thomas": {
+			"offset": -4,
+			"country": "VI"
+		},
+		"America/St_Vincent": {
+			"offset": -4,
+			"country": "VC"
+		},
+		"America/Swift_Current": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Tegucigalpa": {
+			"offset": -6,
+			"country": "HN"
+		},
+		"America/Thunder_Bay": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Tijuana": {
+			"offset": -8,
+			"country": "MX"
+		},
+		"America/Toronto": {
+			"offset": -5,
+			"country": "CA"
+		},
+		"America/Tortola": {
+			"offset": -4,
+			"country": "VG"
+		},
+		"America/Vancouver": {
+			"offset": -8,
+			"country": "CA"
+		},
+		"America/Whitehorse": {
+			"offset": -8,
+			"country": "CA"
+		},
+		"America/Winnipeg": {
+			"offset": -6,
+			"country": "CA"
+		},
+		"America/Yakutat": {
+			"offset": -9,
+			"country": "US"
+		},
+		"America/Yellowknife": {
+			"offset": -7,
+			"country": "CA"
+		},
+		"Antarctica/Macquarie": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Arctic/Longyearbyen": {
+			"offset": 1,
+			"country": "SJ"
+		},
+		"Asia/Aden": {
+			"offset": 3,
+			"country": "YE"
+		},
+		"Asia/Almaty": {
+			"offset": 6,
+			"country": "KZ"
+		},
+		"Asia/Amman": {
+			"offset": 2,
+			"country": "JO"
+		},
+		"Asia/Anadyr": {
+			"offset": 12,
+			"country": "RU"
+		},
+		"Asia/Aqtau": {
+			"offset": 5,
+			"country": "KZ"
+		},
+		"Asia/Aqtobe": {
+			"offset": 5,
+			"country": "KZ"
+		},
+		"Asia/Ashgabat": {
+			"offset": 5,
+			"country": "TM"
+		},
+		"Asia/Baghdad": {
+			"offset": 3,
+			"country": "IQ"
+		},
+		"Asia/Bahrain": {
+			"offset": 3,
+			"country": "BH"
+		},
+		"Asia/Bangkok": {
+			"offset": 7,
+			"country": "TH"
+		},
+		"Asia/Baku": {
+			"offset": 4,
+			"country": "AZ"
+		},
+		"Asia/Chongqing": {
+			"offset": 8,
+			"country": "CN"
+		},
+		"Asia/Beirut": {
+			"offset": 2,
+			"country": "LB"
+		},
+		"Asia/Bishkek": {
+			"offset": 6,
+			"country": "KG"
+		},
+		"Asia/Brunei": {
+			"offset": 8,
+			"country": "BN"
+		},
+		"Asia/Choibalsan": {
+			"offset": 8,
+			"country": "MN"
+		},
+		"Asia/Colombo": {
+			"offset": 5.5,
+			"country": "LK"
+		},
+		"Asia/Damascus": {
+			"offset": 2,
+			"country": "SY"
+		},
+		"Asia/Dhaka": {
+			"offset": 6,
+			"country": "BD"
+		},
+		"Asia/Dili": {
+			"offset": 9,
+			"country": "TL"
+		},
+		"Asia/Dubai": {
+			"offset": 4,
+			"country": "AE"
+		},
+		"Asia/Dushanbe": {
+			"offset": 5,
+			"country": "TJ"
+		},
+		"Asia/Gaza": {
+			"offset": 2,
+			"country": "PS"
+		},
+		"Asia/Harbin": {
+			"offset": 8,
+			"country": "CN"
+		},
+		"Asia/Hebron": {
+			"offset": 2,
+			"country": "PS"
+		},
+		"Asia/Ho_Chi_Minh": {
+			"offset": 7,
+			"country": "VN"
+		},
+		"Asia/Hong_Kong": {
+			"offset": 8,
+			"country": "HK"
+		},
+		"Asia/Hovd": {
+			"offset": 7,
+			"country": "MN"
+		},
+		"Asia/Irkutsk": {
+			"offset": 9,
+			"country": "RU"
+		},
+		"Asia/Jakarta": {
+			"offset": 7,
+			"country": "ID"
+		},
+		"Asia/Jayapura": {
+			"offset": 9,
+			"country": "ID"
+		},
+		"Asia/Kabul": {
+			"offset": 4.5,
+			"country": "AF"
+		},
+		"Asia/Jerusalem": {
+			"offset": 2,
+			"country": "IL"
+		},
+		"Asia/Kamchatka": {
+			"offset": 12,
+			"country": "RU"
+		},
+		"Asia/Karachi": {
+			"offset": 5,
+			"country": "PK"
+		},
+		"Asia/Kashgar": {
+			"offset": 8,
+			"country": "CN"
+		},
+		"Asia/Kathmandu": {
+			"offset": 5.8,
+			"country": "NP"
+		},
+		"Asia/Kolkata": {
+			"offset": 5.5,
+			"country": "IN"
+		},
+		"Asia/Krasnoyarsk": {
+			"offset": 8,
+			"country": "RU"
+		},
+		"Asia/Kuala_Lumpur": {
+			"offset": 8,
+			"country": "MY"
+		},
+		"Asia/Kuching": {
+			"offset": 8,
+			"country": "MY"
+		},
+		"Asia/Kuwait": {
+			"offset": 3,
+			"country": "KW"
+		},
+		"Asia/Macau": {
+			"offset": 8,
+			"country": "MO"
+		},
+		"Asia/Magadan": {
+			"offset": 12,
+			"country": "RU"
+		},
+		"Asia/Makassar": {
+			"offset": 8,
+			"country": "ID"
+		},
+		"Asia/Manila": {
+			"offset": 8,
+			"country": "PH"
+		},
+		"Asia/Muscat": {
+			"offset": 4,
+			"country": "OM"
+		},
+		"Asia/Nicosia": {
+			"offset": 2,
+			"country": "CY"
+		},
+		"Asia/Novokuznetsk": {
+			"offset": 7,
+			"country": "RU"
+		},
+		"Asia/Novosibirsk": {
+			"offset": 7,
+			"country": "RU"
+		},
+		"Asia/Omsk": {
+			"offset": 7,
+			"country": "RU"
+		},
+		"Asia/Phnom_Penh": {
+			"offset": 7,
+			"country": "KH"
+		},
+		"Asia/Pontianak": {
+			"offset": 7,
+			"country": "ID"
+		},
+		"Asia/Pyongyang": {
+			"offset": 9,
+			"country": "KP"
+		},
+		"Asia/Qatar": {
+			"offset": 3,
+			"country": "QA"
+		},
+		"Asia/Qyzylorda": {
+			"offset": 6,
+			"country": "KZ"
+		},
+		"Asia/Rangoon": {
+			"offset": 6.5,
+			"country": "MM"
+		},
+		"Asia/Riyadh": {
+			"offset": 3,
+			"country": "SA"
+		},
+		"Asia/Sakhalin": {
+			"offset": 11,
+			"country": "RU"
+		},
+		"Asia/Samarkand": {
+			"offset": 5,
+			"country": "UZ"
+		},
+		"Asia/Seoul": {
+			"offset": 9,
+			"country": "KR"
+		},
+		"Asia/Shanghai": {
+			"offset": 8,
+			"country": "CN"
+		},
+		"Asia/Singapore": {
+			"offset": 8,
+			"country": "SG"
+		},
+		"Asia/Taipei": {
+			"offset": 8,
+			"country": "TW"
+		},
+		"Asia/Tashkent": {
+			"offset": 5,
+			"country": "UZ"
+		},
+		"Asia/Tbilisi": {
+			"offset": 4,
+			"country": "GE"
+		},
+		"Asia/Tehran": {
+			"offset": 3.5,
+			"country": "IR"
+		},
+		"Asia/Thimphu": {
+			"offset": 6,
+			"country": "BT"
+		},
+		"Asia/Tokyo": {
+			"offset": 9,
+			"country": "JP"
+		},
+		"Asia/Ulaanbaatar": {
+			"offset": 8,
+			"country": "MN"
+		},
+		"Asia/Urumqi": {
+			"offset": 8,
+			"country": "CN"
+		},
+		"Asia/Vientiane": {
+			"offset": 7,
+			"country": "LA"
+		},
+		"Asia/Vladivostok": {
+			"offset": 11,
+			"country": "RU"
+		},
+		"Asia/Yakutsk": {
+			"offset": 10,
+			"country": "RU"
+		},
+		"Asia/Yerevan": {
+			"offset": 4,
+			"country": "AM"
+		},
+		"Atlantic/Azores": {
+			"offset": -1,
+			"country": "PT"
+		},
+		"Atlantic/Bermuda": {
+			"offset": -4,
+			"country": "BM"
+		},
+		"Atlantic/Canary": {
+			"offset": 0,
+			"country": "ES"
+		},
+		"Atlantic/Cape_Verde": {
+			"offset": -1,
+			"country": "CV"
+		},
+		"Atlantic/Faroe": {
+			"offset": 0,
+			"country": "FO"
+		},
+		"Atlantic/Madeira": {
+			"offset": 0,
+			"country": "PT"
+		},
+		"Atlantic/Reykjavik": {
+			"offset": 0,
+			"country": "IS"
+		},
+		"Atlantic/South_Georgia": {
+			"offset": -2,
+			"country": "GS"
+		},
+		"Atlantic/St_Helena": {
+			"offset": 0,
+			"country": "SH"
+		},
+		"Atlantic/Stanley": {
+			"offset": -3,
+			"country": "FK"
+		},
+		"Australia/Adelaide": {
+			"offset": 10.5,
+			"country": "AU"
+		},
+		"Australia/Brisbane": {
+			"offset": 10,
+			"country": "AU"
+		},
+		"Australia/Broken_Hill": {
+			"offset": 10.5,
+			"country": "AU"
+		},
+		"Australia/Currie": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Australia/Darwin": {
+			"offset": 9.5,
+			"country": "AU"
+		},
+		"Australia/Eucla": {
+			"offset": 8.8,
+			"country": "AU"
+		},
+		"Australia/Hobart": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Australia/Lindeman": {
+			"offset": 10,
+			"country": "AU"
+		},
+		"Australia/Lord_Howe": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Australia/Melbourne": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Australia/Perth": {
+			"offset": 8,
+			"country": "AU"
+		},
+		"Australia/Sydney": {
+			"offset": 11,
+			"country": "AU"
+		},
+		"Europe/Amsterdam": {
+			"offset": 1,
+			"country": "NL"
+		},
+		"Europe/Andorra": {
+			"offset": 1,
+			"country": "AD"
+		},
+		"Europe/Athens": {
+			"offset": 2,
+			"country": "GR"
+		},
+		"Europe/Belgrade": {
+			"offset": 1,
+			"country": "RS"
+		},
+		"Europe/Bucharest": {
+			"offset": 2,
+			"country": "RO"
+		},
+		"Europe/Berlin": {
+			"offset": 1,
+			"country": "DE"
+		},
+		"Europe/Budapest": {
+			"offset": 1,
+			"country": "HU"
+		},
+		"Europe/Chisinau": {
+			"offset": 2,
+			"country": "MD"
+		},
+		"Europe/Bratislava": {
+			"offset": 1,
+			"country": "SK"
+		},
+		"Europe/Brussels": {
+			"offset": 1,
+			"country": "BE"
+		},
+		"Europe/Copenhagen": {
+			"offset": 1,
+			"country": "DK"
+		},
+		"Europe/Dublin": {
+			"offset": 0,
+			"country": "IE"
+		},
+		"Europe/Gibraltar": {
+			"offset": 1,
+			"country": "GI"
+		},
+		"Europe/Guernsey": {
+			"offset": 0,
+			"country": "GG"
+		},
+		"Europe/Helsinki": {
+			"offset": 2,
+			"country": "FI"
+		},
+		"Europe/Isle_of_Man": {
+			"offset": 0,
+			"country": "IM"
+		},
+		"Europe/Istanbul": {
+			"offset": 2,
+			"country": "TR"
+		},
+		"Europe/Jersey": {
+			"offset": 0,
+			"country": "JE"
+		},
+		"Europe/Kaliningrad": {
+			"offset": 3,
+			"country": "RU"
+		},
+		"Europe/Kiev": {
+			"offset": 2,
+			"country": "UA"
+		},
+		"Europe/Lisbon": {
+			"offset": 0,
+			"country": "PT"
+		},
+		"Europe/Ljubljana": {
+			"offset": 1,
+			"country": "SI"
+		},
+		"Europe/London": {
+			"offset": 0,
+			"country": "GB"
+		},
+		"Europe/Luxembourg": {
+			"offset": 1,
+			"country": "LU"
+		},
+		"Europe/Madrid": {
+			"offset": 1,
+			"country": "ES"
+		},
+		"Europe/Malta": {
+			"offset": 1,
+			"country": "MT"
+		},
+		"Europe/Mariehamn": {
+			"offset": 2,
+			"country": "AX"
+		},
+		"Europe/Minsk": {
+			"offset": 3,
+			"country": "BY"
+		},
+		"Europe/Monaco": {
+			"offset": 1,
+			"country": "MC"
+		},
+		"Europe/Moscow": {
+			"offset": 4,
+			"country": "RU"
+		},
+		"Europe/Oslo": {
+			"offset": 1,
+			"country": "NO"
+		},
+		"Europe/Paris": {
+			"offset": 1,
+			"country": "FR"
+		},
+		"Europe/Podgorica": {
+			"offset": 1,
+			"country": "ME"
+		},
+		"Europe/Prague": {
+			"offset": 1,
+			"country": "CZ"
+		},
+		"Europe/Riga": {
+			"offset": 2,
+			"country": "LV"
+		},
+		"Europe/Rome": {
+			"offset": 1,
+			"country": "IT"
+		},
+		"Europe/Samara": {
+			"offset": 4,
+			"country": "RU"
+		},
+		"Europe/San_Marino": {
+			"offset": 1,
+			"country": "SM"
+		},
+		"Europe/Sarajevo": {
+			"offset": 1,
+			"country": "BA"
+		},
+		"Europe/Simferopol": {
+			"offset": 2,
+			"country": "RU"
+		},
+		"Europe/Skopje": {
+			"offset": 1,
+			"country": "MK"
+		},
+		"Europe/Sofia": {
+			"offset": 2,
+			"country": "BG"
+		},
+		"Europe/Stockholm": {
+			"offset": 1,
+			"country": "SE"
+		},
+		"Europe/Tallinn": {
+			"offset": 2,
+			"country": "EE"
+		},
+		"Europe/Tirane": {
+			"offset": 1,
+			"country": "AL"
+		},
+		"Europe/Uzhgorod": {
+			"offset": 2,
+			"country": "UA"
+		},
+		"Europe/Vaduz": {
+			"offset": 1,
+			"country": "LI"
+		},
+		"Europe/Vatican": {
+			"offset": 1,
+			"country": "VA"
+		},
+		"Europe/Vienna": {
+			"offset": 1,
+			"country": "AT"
+		},
+		"Europe/Vilnius": {
+			"offset": 2,
+			"country": "LT"
+		},
+		"Europe/Volgograd": {
+			"offset": 4,
+			"country": "RU"
+		},
+		"Europe/Warsaw": {
+			"offset": 1,
+			"country": "PL"
+		},
+		"Europe/Zagreb": {
+			"offset": 1,
+			"country": "HR"
+		},
+		"Europe/Zaporozhye": {
+			"offset": 2,
+			"country": "UA"
+		},
+		"Europe/Zurich": {
+			"offset": 1,
+			"country": "CH"
+		},
+		"Indian/Antananarivo": {
+			"offset": 3,
+			"country": "MG"
+		},
+		"Indian/Chagos": {
+			"offset": 6,
+			"country": "IO"
+		},
+		"Indian/Christmas": {
+			"offset": 7,
+			"country": "CX"
+		},
+		"Indian/Cocos": {
+			"offset": 6.5,
+			"country": "CC"
+		},
+		"Indian/Comoro": {
+			"offset": 3,
+			"country": "KM"
+		},
+		"Indian/Kerguelen": {
+			"offset": 5,
+			"country": "TF"
+		},
+		"Indian/Mahe": {
+			"offset": 4,
+			"country": "SC"
+		},
+		"Indian/Maldives": {
+			"offset": 5,
+			"country": "MV"
+		},
+		"Indian/Mauritius": {
+			"offset": 4,
+			"country": "MU"
+		},
+		"Indian/Mayotte": {
+			"offset": 3,
+			"country": "YT"
+		},
+		"Indian/Reunion": {
+			"offset": 4,
+			"country": "RE"
+		},
+		"Pacific/Apia": {
+			"offset": 14,
+			"country": "WS"
+		},
+		"Pacific/Auckland": {
+			"offset": 13,
+			"country": "NZ"
+		},
+		"Pacific/Chatham": {
+			"offset": 13.8,
+			"country": "NZ"
+		},
+		"Pacific/Chuuk": {
+			"offset": 10,
+			"country": "FM"
+		},
+		"Pacific/Easter": {
+			"offset": -5,
+			"country": "CL"
+		},
+		"Pacific/Enderbury": {
+			"offset": 13,
+			"country": "KI"
+		},
+		"Pacific/Fakaofo": {
+			"offset": 13,
+			"country": "TK"
+		},
+		"Pacific/Efate": {
+			"offset": 11,
+			"country": "VU"
+		},
+		"Pacific/Fiji": {
+			"offset": 13,
+			"country": "FJ"
+		},
+		"Pacific/Funafuti": {
+			"offset": 12,
+			"country": "TV"
+		},
+		"Pacific/Galapagos": {
+			"offset": -6,
+			"country": "EC"
+		},
+		"Pacific/Gambier": {
+			"offset": -9,
+			"country": "PF"
+		},
+		"Pacific/Kwajalein": {
+			"offset": 12,
+			"country": "MH"
+		},
+		"Pacific/Guadalcanal": {
+			"offset": 11,
+			"country": "SB"
+		},
+		"Pacific/Guam": {
+			"offset": 10,
+			"country": "GU"
+		},
+		"Pacific/Honolulu": {
+			"offset": -10,
+			"country": "US"
+		},
+		"Pacific/Johnston": {
+			"offset": -10,
+			"country": "UM"
+		},
+		"Pacific/Kiritimati": {
+			"offset": 14,
+			"country": "KI"
+		},
+		"Pacific/Kosrae": {
+			"offset": 11,
+			"country": "FM"
+		},
+		"Pacific/Majuro": {
+			"offset": 12,
+			"country": "MH"
+		},
+		"Pacific/Midway": {
+			"offset": -11,
+			"country": "UM"
+		},
+		"Pacific/Marquesas": {
+			"offset": -9.5,
+			"country": "PF"
+		},
+		"Pacific/Nauru": {
+			"offset": 12,
+			"country": "NR"
+		},
+		"Pacific/Niue": {
+			"offset": -11,
+			"country": "NU"
+		},
+		"Pacific/Norfolk": {
+			"offset": 11.5,
+			"country": "NF"
+		},
+		"Pacific/Noumea": {
+			"offset": 11,
+			"country": "NC"
+		},
+		"Pacific/Pago_Pago": {
+			"offset": -11,
+			"country": "AS"
+		},
+		"Pacific/Palau": {
+			"offset": 9,
+			"country": "PW"
+		},
+		"Pacific/Pitcairn": {
+			"offset": -8,
+			"country": "PN"
+		},
+		"Pacific/Pohnpei": {
+			"offset": 11,
+			"country": "FM"
+		},
+		"Pacific/Port_Moresby": {
+			"offset": 10,
+			"country": "PG"
+		},
+		"Pacific/Rarotonga": {
+			"offset": -10,
+			"country": "CK"
+		},
+		"Pacific/Saipan": {
+			"offset": 10,
+			"country": "MP"
+		},
+		"Pacific/Tahiti": {
+			"offset": -10,
+			"country": "PF"
+		},
+		"Pacific/Tarawa": {
+			"offset": 12,
+			"country": "KI"
+		},
+		"Pacific/Tongatapu": {
+			"offset": 13,
+			"country": "TO"
+		},
+		"Pacific/Wake": {
+			"offset": 12,
+			"country": "UM"
+		},
+		"Pacific/Wallis": {
+			"offset": 12,
+			"country": "WF"
+		}
+	},
+	"countries": {
+		"AF": "Afghanistan",
+		"AX": "Aland Islands",
+		"AL": "Albania",
+		"DZ": "Algeria",
+		"AS": "American Samoa",
+		"AD": "Andorra",
+		"AO": "Angola",
+		"AI": "Anguilla",
+		"AQ": "Antarctica",
+		"AG": "Antigua and Barbuda",
+		"AR": "Argentina",
+		"AM": "Armenia",
+		"AW": "Aruba",
+		"AU": "Australia",
+		"AT": "Austria",
+		"AZ": "Azerbaijan",
+		"BS": "Bahamas",
+		"BH": "Bahrain",
+		"BD": "Bangladesh",
+		"BB": "Barbados",
+		"BY": "Belarus",
+		"BE": "Belgium",
+		"BZ": "Belize",
+		"BJ": "Benin",
+		"BM": "Bermuda",
+		"BT": "Bhutan",
+		"BO": "Bolivia",
+		"BA": "Bosnia and Herzegovina",
+		"BW": "Botswana",
+		"BV": "Bouvet Island",
+		"BR": "Brazil",
+		"IO": "British Indian Ocean Territory",
+		"VG": "British Virgin Islands",
+		"BN": "Brunei",
+		"BG": "Bulgaria",
+		"BF": "Burkina Faso",
+		"BI": "Burundi",
+		"KH": "Cambodia",
+		"CM": "Cameroon",
+		"CA": "Canada",
+		"CV": "Cape Verde",
+		"KY": "Cayman Islands",
+		"CF": "Central African Republic",
+		"TD": "Chad",
+		"CL": "Chile",
+		"CN": "China",
+		"CX": "Christmas Island",
+		"CC": "Cocos (Keeling) Islands",
+		"CO": "Colombia",
+		"KM": "Comoros",
+		"CG": "Congo (Brazzaville)",
+		"CD": "Congo (Kinshasa)",
+		"CK": "Cook Islands",
+		"CR": "Costa Rica",
+		"HR": "Croatia",
+		"CU": "Cuba",
+		"CW": "Curaçao",
+		"CY": "Cyprus",
+		"CZ": "Czech Republic",
+		"DK": "Denmark",
+		"DJ": "Djibouti",
+		"DM": "Dominica",
+		"DO": "Dominican Republic",
+		"EC": "Ecuador",
+		"EG": "Egypt",
+		"SV": "El Salvador",
+		"GQ": "Equatorial Guinea",
+		"ER": "Eritrea",
+		"EE": "Estonia",
+		"ET": "Ethiopia",
+		"FK": "Falkland Islands",
+		"FO": "Faroe Islands",
+		"FJ": "Fiji",
+		"FI": "Finland",
+		"FR": "France",
+		"GF": "French Guiana",
+		"PF": "French Polynesia",
+		"TF": "French Southern Territories",
+		"GA": "Gabon",
+		"GM": "Gambia",
+		"GE": "Georgia",
+		"DE": "Germany",
+		"GH": "Ghana",
+		"GI": "Gibraltar",
+		"GR": "Greece",
+		"GL": "Greenland",
+		"GD": "Grenada",
+		"GP": "Guadeloupe",
+		"GU": "Guam",
+		"GT": "Guatemala",
+		"GG": "Guernsey",
+		"GN": "Guinea",
+		"GW": "Guinea-Bissau",
+		"GY": "Guyana",
+		"HT": "Haiti",
+		"HM": "Heard Island and McDonald Islands",
+		"HN": "Honduras",
+		"HK": "Hong Kong S.A.R.,China",
+		"HU": "Hungary",
+		"IS": "Iceland",
+		"IN": "India",
+		"ID": "Indonesia",
+		"IR": "Iran",
+		"IQ": "Iraq",
+		"IE": "Ireland",
+		"IM": "Isle of Man",
+		"IL": "Israel",
+		"IT": "Italy",
+		"CI": "Ivory Coast",
+		"JM": "Jamaica",
+		"JP": "Japan",
+		"JE": "Jersey",
+		"JO": "Jordan",
+		"KZ": "Kazakhstan",
+		"KE": "Kenya",
+		"KI": "Kiribati",
+		"KW": "Kuwait",
+		"KG": "Kyrgyzstan",
+		"LA": "Laos",
+		"LV": "Latvia",
+		"LB": "Lebanon",
+		"LS": "Lesotho",
+		"LR": "Liberia",
+		"LY": "Libya",
+		"LI": "Liechtenstein",
+		"LT": "Lithuania",
+		"LU": "Luxembourg",
+		"MO": "Macao S.A.R.,China",
+		"MK": "Macedonia",
+		"MG": "Madagascar",
+		"MW": "Malawi",
+		"MY": "Malaysia",
+		"MV": "Maldives",
+		"ML": "Mali",
+		"MT": "Malta",
+		"MH": "Marshall Islands",
+		"MQ": "Martinique",
+		"MR": "Mauritania",
+		"MU": "Mauritius",
+		"YT": "Mayotte",
+		"MX": "Mexico",
+		"FM": "Micronesia",
+		"MD": "Moldova",
+		"MC": "Monaco",
+		"MN": "Mongolia",
+		"ME": "Montenegro",
+		"MS": "Montserrat",
+		"MA": "Morocco",
+		"MZ": "Mozambique",
+		"MM": "Myanmar",
+		"NA": "Namibia",
+		"NR": "Nauru",
+		"NP": "Nepal",
+		"NL": "Netherlands",
+		"AN": "Netherlands Antilles",
+		"NC": "New Caledonia",
+		"NZ": "New Zealand",
+		"NI": "Nicaragua",
+		"NE": "Niger",
+		"NG": "Nigeria",
+		"NU": "Niue",
+		"NF": "Norfolk Island",
+		"MP": "Northern Mariana Islands",
+		"KP": "North Korea",
+		"NO": "Norway",
+		"OM": "Oman",
+		"PK": "Pakistan",
+		"PW": "Palau",
+		"PS": "Palestinian Territory",
+		"PA": "Panama",
+		"PG": "Papua New Guinea",
+		"PY": "Paraguay",
+		"PE": "Peru",
+		"PH": "Philippines",
+		"PN": "Pitcairn",
+		"PL": "Poland",
+		"PT": "Portugal",
+		"PR": "Puerto Rico",
+		"QA": "Qatar",
+		"RE": "Reunion",
+		"RO": "Romania",
+		"RU": "Russia",
+		"RW": "Rwanda",
+		"BL": "Saint Barthélemy",
+		"SH": "Saint Helena",
+		"KN": "Saint Kitts and Nevis",
+		"LC": "Saint Lucia",
+		"MF": "Saint Martin (French part)",
+		"PM": "Saint Pierre and Miquelon",
+		"VC": "Saint Vincent and the Grenadines",
+		"WS": "Samoa",
+		"SM": "San Marino",
+		"ST": "Sao Tome and Principe",
+		"SA": "Saudi Arabia",
+		"SN": "Senegal",
+		"RS": "Serbia",
+		"SC": "Seychelles",
+		"SL": "Sierra Leone",
+		"SG": "Singapore",
+		"SK": "Slovakia",
+		"SI": "Slovenia",
+		"SB": "Solomon Islands",
+		"SO": "Somalia",
+		"ZA": "South Africa",
+		"GS": "South Georgia and the South Sandwich Islands",
+		"KR": "South Korea",
+		"ES": "Spain",
+		"LK": "Sri Lanka",
+		"SD": "Sudan",
+		"SR": "Suriname",
+		"SJ": "Svalbard and Jan Mayen",
+		"SZ": "Swaziland",
+		"SE": "Sweden",
+		"CH": "Switzerland",
+		"SY": "Syria",
+		"TW": "Taiwan",
+		"TJ": "Tajikistan",
+		"TZ": "Tanzania",
+		"TH": "Thailand",
+		"TL": "Timor-Leste",
+		"TG": "Togo",
+		"TK": "Tokelau",
+		"TO": "Tonga",
+		"TT": "Trinidad and Tobago",
+		"TN": "Tunisia",
+		"TR": "Turkey",
+		"TM": "Turkmenistan",
+		"TC": "Turks and Caicos Islands",
+		"TV": "Tuvalu",
+		"VI": "U.S. Virgin Islands",
+		"UG": "Uganda",
+		"UA": "Ukraine",
+		"AE": "United Arab Emirates",
+		"GB": "United Kingdom",
+		"US": "United States",
+		"UM": "United States Minor Outlying Islands",
+		"UY": "Uruguay",
+		"UZ": "Uzbekistan",
+		"VU": "Vanuatu",
+		"VA": "Vatican",
+		"VE": "Venezuela",
+		"VN": "Vietnam",
+		"WF": "Wallis and Futuna",
+		"EH": "Western Sahara",
+		"YE": "Yemen",
+		"ZM": "Zambia",
+		"ZW": "Zimbabwe"
+	}
+}
